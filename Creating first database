@@ -1,0 +1,14 @@
+# SQLite
+
+CREATE TABLE Ages ( 
+  name VARCHAR(128), 
+  age INTEGER
+)
+
+DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES ('Clark', 23);
+INSERT INTO Ages (name, age) VALUES ('Francisca', 40);
+INSERT INTO Ages (name, age) VALUES ('Ammaar', 13);
+INSERT INTO Ages (name, age) VALUES ('Wylie', 39);
+
+SELECT hex(name || age) AS X FROM Ages ORDER BY X
